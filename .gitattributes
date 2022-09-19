@@ -1,0 +1,7 @@
+#
+# Container Image HTTPD
+#
+
+etc/httpd/ca.pem binary
+etc/httpd/tls-cer.pem binary
+etc/httpd/tls-key.pem binary

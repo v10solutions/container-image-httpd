@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#
+# Container Image HTTPD
+#
+
+set -o "errexit"
+set -o "nounset"
+set -o "pipefail"
+
+curl \
+	-L \
+	-f \
+	-s \
+	-S \
+	-o "/dev/null" \
+	-w "%{http_code}" \
+	-m "${2}" \
+	--retry "1" \
+	--cacert "/usr/local/etc/httpd/ca.pem" \
+	"https://$(hostname -f):${1}"

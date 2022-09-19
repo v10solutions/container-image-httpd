@@ -1,0 +1,26 @@
+#
+# Container Image HTTPD
+#
+
+<Layout Alpine>
+	prefix:						/usr/local
+	exec_prefix:			${prefix}
+	bindir:						${exec_prefix}/bin
+	sbindir:					${exec_prefix}/sbin
+	libdir:						${exec_prefix}/lib/httpd
+	libexecdir:				${exec_prefix}/libexec/httpd
+	mandir:						${datadir}/man
+	sysconfdir:				${prefix}/etc/httpd
+	datadir:					${prefix}/share/httpd
+	installbuilddir:	${datadir}/build
+	errordir:					${datadir}/error
+	iconsdir:					${datadir}/icons
+	htdocsdir:				${localstatedir}/lib/httpd
+	manualdir:				${datadir}/manual
+	cgidir:						${datadir}/cgi-bin
+	includedir:				${prefix}/include
+	localstatedir:		${prefix}/var
+	runtimedir:				${localstatedir}/run/httpd
+	logfiledir:				${localstatedir}/log/httpd
+	proxycachedir:		${localstatedir}/cache/httpd
+</Layout>

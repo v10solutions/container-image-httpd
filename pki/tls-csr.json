@@ -1,0 +1,17 @@
+{
+	"key": {
+		"algo": "ecdsa",
+		"size": 384
+	},
+	"names": [
+		{
+			"c": "ES",
+			"st": "Madrid",
+			"l": "Madrid",
+			"o": "V10 Solutions",
+			"ou": "Container Images"
+		}
+	],
+	"cn": "httpd",
+	"hosts": ["httpd"]
+}
